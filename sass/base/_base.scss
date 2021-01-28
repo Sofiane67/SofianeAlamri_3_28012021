@@ -2,7 +2,7 @@ html{
     font-size: 62.5%;
     box-sizing: border-box;
 
-    @media only screen and (min-width: 750px){
+    @include media-queries(map-get($breakpoints, bp-850)){
         font-size: 70%;
     }
 }

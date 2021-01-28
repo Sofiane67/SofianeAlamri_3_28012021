@@ -1,6 +1,8 @@
 .company{
+    color: $color-gray-dark;
     &__location{
         background-color: $color-gray-location;
+        font-weight: 700;
         display: flex;
         justify-content: center;
         padding: 1.5rem 0;
@@ -18,5 +20,6 @@
 
     &__text{
         padding: 2rem 0;
+        text-align: center;
     }
 }

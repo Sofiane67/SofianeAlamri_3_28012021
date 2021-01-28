@@ -1,0 +1,9 @@
+@mixin box-shadow($opacity){
+    box-shadow: 0 .3rem 1rem rgba($color-black, $opacity);
+}
+
+@mixin media-queries($breakpoint){
+    @media only screen and (min-width: $breakpoint){
+        @content;
+    }
+}

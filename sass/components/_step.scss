@@ -2,7 +2,8 @@
     padding: 2.5rem 0;
     background-color: $color-gray-light;
     border-radius: 2rem;
-    box-shadow: 0 .3rem 1rem rgba($color-black, .2);
+    @include box-shadow(.2);
+    transition: all .2s;
 
     &__number{
         display: inline-block;
@@ -14,13 +15,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: all .3s;
-
     }
 
     &__text{
+        font-size: 1.8rem;
+        font-weight: 700;
         margin-left: 2rem;
-        @media only screen and (min-width: 750px){
+
+        @include media-queries(map-get($breakpoints, bp-750)){
+            font-size: 1.5rem;
             margin: 0;
         }
     }

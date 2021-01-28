@@ -2,13 +2,12 @@
     display: inline-block;
     padding: 1.5rem 2.5rem;
     border-radius: 5rem;
-    background: linear-gradient($color-secondary,$color-primary);
-    box-shadow: 0 .3rem 1rem rgba($color-black, .3);
+    background-image: linear-gradient($color-secondary,$color-primary);
+    @include box-shadow(.3);
     transition: all .2s;
 
     &:hover{
-        background: linear-gradient(lighten($color-secondary,4%),lighten($color-primary,4%));
-        box-shadow: 0 .3rem 1rem rgba($color-black, .3);
+        background-image: linear-gradient(lighten($color-secondary,4%),lighten($color-primary,4%));
         box-shadow: 0 .5rem 1rem rgba($color-black, .55);
     }
 }

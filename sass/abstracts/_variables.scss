@@ -10,3 +10,9 @@ $color-gray-dark: #363636;
 $color-white: #fff;
 $color-black: #000;
 
+$breakpoints:(
+    bp-700: 43.75em,
+    bp-750: 46.875em,
+    bp-850: 53.125em,
+    bp-1165: 72.8125em
+);
