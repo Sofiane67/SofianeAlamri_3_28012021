@@ -1,17 +1,94 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import "abstracts/functions";
- *   |         ^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   sass\main.scss 1:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"abstracts/functions\";\d\a   \2502          ^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   sass\\main.scss 1:9  root stylesheet";
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+.icon {
+  height: 2rem;
+  width: 2rem;
+}
+.icon--black {
+  fill: #363636;
+}
+
+.company {
+  color: #363636;
+}
+.company__location {
+  font-weight: 700;
+}
+.company__text {
+  text-align: center;
+}
+
+.heading-secondary {
+  font-size: 2.5rem;
+  color: #000;
+  text-align: center;
+}
+
+.btn {
+  color: #fff;
+}
+
+.company__location {
+  background-color: #ebebeb;
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 0;
+}
+.company__city {
+  margin-left: 1rem;
+}
+.company__text-box {
+  background-color: #f5f5f5;
+  padding: 4rem;
+  text-align: center;
+}
+.company__text {
+  padding: 2rem 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1.5rem 2.5rem;
+  border-radius: 5rem;
+  background: linear-gradient(#FF79DA, #9256dc);
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
+  transition: all 0.2s;
+}
+.btn:hover {
+  background: linear-gradient(#ff8de0, #9d67e0);
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.55);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+/*# sourceMappingURL=style.css.map */
