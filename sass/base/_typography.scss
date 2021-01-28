@@ -13,9 +13,14 @@ body{
     height: 2rem;
     width: 2rem;
 
-    &--black{
+    &--gray-dark{
         fill: $color-gray-dark;
     }
+
+    &--gray{
+        fill: $color-gray-icon;
+    }
+
 }
 
 .company{
@@ -38,4 +43,14 @@ body{
 
 .btn{
     color: $color-white;
+}
+
+.step{
+    &__text{
+        font-size: 1.8rem;
+        font-weight: 700;
+    @media only screen and (min-width: 750px){
+        font-size: 1.5rem;
+    }
+    }
 }

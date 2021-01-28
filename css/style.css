@@ -2,6 +2,11 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
+@media only screen and (min-width: 750px) {
+  html {
+    font-size: 70%;
+  }
+}
 
 * {
   margin: 0;
@@ -29,8 +34,11 @@ body {
   height: 2rem;
   width: 2rem;
 }
-.icon--black {
+.icon--gray-dark {
   fill: #363636;
+}
+.icon--gray {
+  fill: #7d7d7d;
 }
 
 .company {
@@ -51,6 +59,16 @@ body {
 
 .btn {
   color: #fff;
+}
+
+.step__text {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+@media only screen and (min-width: 750px) {
+  .step__text {
+    font-size: 1.5rem;
+  }
 }
 
 .company__location {
@@ -85,10 +103,100 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.55);
 }
 
+.step {
+  padding: 2.5rem 0;
+  background-color: #f5f5f5;
+  border-radius: 2rem;
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
+}
+.step__number {
+  display: inline-block;
+  color: #fff;
+  background-color: #9256dc;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+.step__text {
+  margin-left: 2rem;
+}
+@media only screen and (min-width: 750px) {
+  .step__text {
+    margin: 0;
+  }
+}
+.step:hover {
+  background-color: rgba(146, 86, 220, 0.1);
+}
+.step:hover .icon {
+  fill: #9256dc;
+}
+
 .header {
   display: flex;
   justify-content: center;
   padding: 1rem 0;
+}
+
+.operation {
+  padding: 4rem 0;
+  display: grid;
+  justify-items: center;
+  grid-gap: 3rem;
+}
+@media only screen and (min-width: 750px) {
+  .operation {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 4rem;
+  }
+}
+.operation__heading {
+  grid-column: 1/-1;
+}
+
+.step {
+  width: 85%;
+  display: grid;
+  grid-template-columns: repeat(2, min-content) 1fr;
+}
+@media only screen and (min-width: 750px) {
+  .step {
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-row-gap: 1rem;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+  }
+}
+.step__number {
+  grid-column: 1/2;
+  transform: translateX(-50%);
+}
+@media only screen and (min-width: 750px) {
+  .step__number {
+    grid-column: 3/4;
+    position: absolute;
+    top: 0;
+    transform: translate(0, -50%);
+  }
+}
+@media only screen and (min-width: 750px) {
+  .step__icon {
+    grid-column: 3/4;
+  }
+}
+.step__text {
+  grid-column: 3/4;
+}
+@media only screen and (min-width: 750px) {
+  .step__text {
+    grid-column: 1/-1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
