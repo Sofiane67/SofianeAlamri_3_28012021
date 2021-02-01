@@ -19,6 +19,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 body {
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
@@ -28,6 +32,10 @@ body {
   font-family: "Shrikhand", cursive;
   font-size: 3.5rem;
   font-weight: 500;
+}
+.logo--footer {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .icon {
@@ -49,6 +57,14 @@ body {
 
 .btn {
   color: #fff;
+}
+
+.footer__link {
+  line-height: 2.5rem;
+  font-weight: 300;
+}
+.footer__link--bold {
+  font-weight: 600;
 }
 
 .company {
@@ -180,12 +196,14 @@ body {
   grid-column: 1/-1;
 }
 
-.operation {
-  padding: 4rem 0;
+.operation,
+.restaurant {
   display: grid;
-  justify-items: center;
+  justify-items: start;
   grid-gap: 3rem;
+  padding: 4rem 3rem;
 }
+
 @media only screen and (min-width: 46.875em) {
   .operation {
     grid-template-columns: repeat(3, 1fr);
@@ -194,7 +212,7 @@ body {
 }
 
 .step {
-  width: 85%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, min-content) 1fr;
 }
@@ -235,28 +253,16 @@ body {
 }
 
 .restaurant {
-  display: grid;
-  justify-items: center;
-  grid-gap: 3rem;
+  background-color: #f5f5f5;
 }
 @media only screen and (min-width: 43.75em) {
   .restaurant {
-    grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
   }
 }
 @media only screen and (min-width: 72.8125em) {
   .restaurant {
     grid-template-columns: repeat(4, 1fr);
-    padding: 4rem;
-  }
-}
-
-.card-link {
-  width: 85%;
-}
-@media only screen and (min-width: 46.875em) {
-  .card-link {
-    width: 100%;
   }
 }
 
@@ -289,6 +295,34 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.footer {
+  background-color: #363636;
+  color: #fff;
+  padding: 3rem;
+}
+@media only screen and (min-width: 53.125em) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.footer__link {
+  display: flex;
+  align-items: center;
+}
+@media only screen and (min-width: 53.125em) {
+  .footer__link {
+    justify-content: center;
+  }
+}
+.footer__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+  fill: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

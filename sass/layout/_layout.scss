@@ -2,12 +2,15 @@
     grid-column: 1 / -1;
 }
 
-.operation{
-    padding: 4rem 0;
+.operation,
+.restaurant{
     display: grid;
-    justify-items: center;
+    justify-items: start;
     grid-gap: 3rem;
+    padding: 4rem 3rem;
+}
 
+.operation{
     @include media-queries(map-get($breakpoints, bp-750)){
         grid-template-columns: repeat(3, 1fr);
         padding: 4rem;
@@ -15,7 +18,7 @@
 }
 
 .step{
-    width: 85%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, min-content) 1fr;
 
@@ -55,27 +58,18 @@
 }
 
 .restaurant{
-    display: grid;
-    justify-items: center;
-    grid-gap: 3rem;
-
+    background-color: $color-gray-light;
+    
     @include media-queries(map-get($breakpoints, bp-700)){
-        grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+        
     }
 
     @include media-queries(map-get($breakpoints, bp-1165)){
         grid-template-columns: repeat(4, 1fr);
-        padding: 4rem;
     }   
 }
 
-.card-link{
-    width: 85%;
-
-     @include media-queries(map-get($breakpoints, bp-750)){
-        width: 100%;
-    }
-}
 
 .card{
     display: grid;

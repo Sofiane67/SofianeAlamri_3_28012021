@@ -7,6 +7,11 @@ body{
     font-family: 'Shrikhand', cursive;
     font-size: 3.5rem;
     font-weight: 500;
+    
+    &--footer{
+        font-size: 2rem;
+        margin-bottom: 2.5rem;
+    }
 }
 
 .icon{
@@ -31,4 +36,14 @@ body{
 
 .btn{
     color: $color-white;
+}
+
+.footer{
+    &__link{
+        line-height: 2.5rem;
+        font-weight: 300;
+        &--bold{
+            font-weight: 600;
+        }
+    }
 }
