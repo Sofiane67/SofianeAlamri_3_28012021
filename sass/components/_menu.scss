@@ -21,9 +21,24 @@
     }
 
     &__list{
+        width: 100%;
         display: grid;
         grid-template-columns: minmax(0,1fr);
-        grid-gap: 2rem;
+        grid-gap: 3rem;
+
+        &--starters{
+            animation: displayDishes 2s cubic-bezier(0.5, 1, 0.89, 1);
+        }
+
+        &--dishes{
+            animation: displayDishes 2s cubic-bezier(0.5, 1, 0.89, 1) .3s;
+            animation-fill-mode: backwards;
+        }
+
+        &--dessert{
+            animation: displayDishes 2s cubic-bezier(0.5, 1, 0.89, 1) .6s;
+            animation-fill-mode: backwards;
+        }
     }
 
      &__item{
