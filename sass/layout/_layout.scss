@@ -110,6 +110,12 @@
     @include media-queries(map-get($breakpoints, bp-850)){
         grid-template-columns: repeat(3, 3fr);
     }
+
+    @include media-queries(map-get($breakpoints, bp-1340)){
+        width: 75%;
+        margin: 0 auto;
+    }
+
     &__list{
         &--dessert{
             @include media-queries(map-get($breakpoints, bp-600)){

@@ -10,13 +10,14 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
     grid-gap: 3rem;
-
+    justify-items: center;
     &__restaurant-name{
         grid-column: 1 / -1;
         position: relative;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        justify-self: stretch;
     }
 
     &__list{
@@ -42,5 +43,9 @@
             background-color: $color-tertiary;
             display: block;
         }
+    }
+
+    &__btn{
+        grid-column: 1 / -1;
     }
 }

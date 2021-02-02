@@ -233,6 +233,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
   grid-gap: 3rem;
+  justify-items: center;
 }
 .menu__restaurant-name {
   grid-column: 1/-1;
@@ -240,6 +241,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  justify-self: stretch;
 }
 .menu__list {
   display: grid;
@@ -260,6 +262,9 @@ body {
   width: 5rem;
   background-color: #98e2cf;
   display: block;
+}
+.menu__btn {
+  grid-column: 1/-1;
 }
 
 .dish {
@@ -445,6 +450,12 @@ body {
 @media only screen and (min-width: 53.125em) {
   .menu {
     grid-template-columns: repeat(3, 3fr);
+  }
+}
+@media only screen and (min-width: 83.75em) {
+  .menu {
+    width: 75%;
+    margin: 0 auto;
   }
 }
 @media only screen and (min-width: 37.5em) {
