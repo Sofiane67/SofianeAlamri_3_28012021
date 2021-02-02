@@ -3,14 +3,28 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-.logo{
+.logo,
+.menu__restaurant-name{
     font-family: 'Shrikhand', cursive;
-    font-size: 3.5rem;
     font-weight: 500;
-    
+}
+
+.logo{    
+    font-size: 3.5rem;
     &--footer{
         font-size: 2rem;
         margin-bottom: 2.5rem;
+    }
+}
+
+.menu{
+    &__restaurant-name{
+        font-size: 2.5rem;
+    }
+
+    &__type{
+        text-transform: uppercase;
+        font-weight: 400;
     }
 }
 

@@ -1,62 +1,162 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ohmyfood | La palette du goût</title>
-        <link rel="shortcut icon" type="image/png" href="../images/logo/ohmyfood.png">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
-            integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-        <link rel="stylesheet" href="../css/style.css">
-    </head>
-    <body>
-        <header class="header header--inner-page">
-            <a href="../index.html" class="header__link">
-                <svg class="icon">
-                    <use xlink:href="../images/icons/sprite.svg#icon-arrow-left"></use>
-                </svg>
-            </a>
-            <h1 class="logo logo--header header__logo--inner">ohmyfood</h1>
-        </header>
-        <section class="hero">
-            <img src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" class="hero__image">
-        </section>
-        <footer class="footer">
-            <h1 class="logo logo--footer">ohmyfood</h1>
-            <ul class="footer__list">
-                <li class="footer__item">
-                    <a href="#" class="footer__link footer__link--bold">
-                        <svg class="footer__icon icon icon--white">
-                            <use xlink:href="../images/icons/sprite.svg#icon-utensils"></use>
-                        </svg>
-                        Proposer un restaurant
-                    </a>
-                </li>
-                <li class="footer__item">
-                    <a href="#" class="footer__link footer__link--bold">
-                        <svg class="footer__icon icon icon--white">
-                            <use xlink:href="../images/icons/sprite.svg#icon-hands-helping"></use>
-                        </svg>
-                        Devenir partenaire
-                    </a>
-                </li>
-                <li class="footer__item">
-                    <a href="#" class="footer__link">
-                        Mentions légales
-                    </a>
-                </li>
-                <li class="footer__item">
-                    <a href="#" class="footer__link">
-                        Contact
-                    </a>
-                </li>
-            </ul>
-        </footer>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohmyfood | La palette du goût</title>
+    <link rel="shortcut icon" type="image/png" href="../images/logo/ohmyfood.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="inner-body">
+    <header class="header header--inner-page">
+        <a href="../index.html" class="header__link">
+            <svg class="icon">
+                <use xlink:href="../images/icons/sprite.svg#icon-arrow-left"></use>
+            </svg>
+        </a>
+        <h1 class="logo logo--header header__logo--inner">ohmyfood</h1>
+    </header>
+    <section class="hero">
+        <img src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" class="hero__image">
+    </section>
+    <section class="menu">
+        <h2 class="menu__restaurant-name">
+            <span>La palette du goût</span>
+            <div class="menu__favorite">
+                <i class="far fa-heart favorite-icon favorite-icon--menu favorite-icon--show"></i>
+                <i class="fas fa-heart favorite-icon favorite-icon--menu favorite-icon--hidden"></i>
+            </div>
+        </h2>
+        <ul class="menu__list menu__list--starters">
+            <h3 class="menu__type">Entrées</h3>
+            <li class="menu__item">
+                <a href="#" class="dish">
+                    <h3 class="dish__name">
+                        <span class="dish__name--main">Fricassée d'escargot</span>
+                        <span class="dish__name--sub">Au piment d'Espelette</span>
+                    </h3>
+                    <p class="dish__price">25€</p>
+                </a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="dish">
+                    <h3 class="dish__name">
+                        <span class="dish__name--main">Foie gras de canard mi-cuit</span>
+                        <span class="dish__name--sub">Et ses copeaux de truffe noire</span>
+                    </h3>
+                    <p class="dish__price">35€</p>
+                </a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="dish">
+                    <h3 class="dish__name">
+                        <span class="dish__name--main">Oeuf au plat</span>
+                        <span class="dish__name--sub">Assaisonné à la truffe sur lit de caviar</span>
+                    </h3>
+                    <p class="dish__price">20€</p>
+                </a>
+            </li>
+        </ul>
+        <ul class="menu__list menu__list--dishes">
+            <h3 class="menu__type">Plats</h3>
+            <li class="menu__item">
+                <a href="#" class="dish">
+                    <h3 class="dish__name">
+                        <span class="dish__name--main">Filet de boeuf aux herbes</span>
+                        <span class="dish__name--sub">Accompagné de sa ribambelle de légumes</span>
+                    </h3>
+                    <p class="dish__price">40€</p>
+                </a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="dish">
+                    <h3 class="dish__name">
+                        <span class="dish__name--main">Parmentier de queue de boeuf</span>
+                        <span class="dish__name--sub">À la truffe noire sur sa purée de panais</span>
+                    </h3>
+                    <p class="dish__price">35€</p>
+                </a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="dish">
+                    <h3 class="dish__name">
+                        <span class="dish__name--main">Filet de turbot</span>
+                        <span class="dish__name--sub">Aux agrumes</span>
+                    </h3>
+                    <p class="dish__price">44€</p>
+                </a>
+            </li>
+        </ul>
+        <ul class="menu__list menu__list--dessert">
+            <h3 class="menu__type">Desserts</h3>
+            <li class="menu__item">
+                <a href="#" class="dish">
+                    <h3 class="dish__name">
+                        <span class="dish__name--main">Paris-Brest</span>
+                        <span class="dish__name--sub">Revisité</span>
+                    </h3>
+                    <p class="dish__price">18€</p>
+                </a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="dish">
+                    <h3 class="dish__name">
+                        <span class="dish__name--main">Macaron au chocolat d'exception</span>
+                        <span class="dish__name--sub">Et glace à la vanille de Madagascar</span>
+                    </h3>
+                    <p class="dish__price">22€</p>
+                </a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="dish">
+                    <h3 class="dish__name">
+                        <span class="dish__name--main">Mousse au chocolat</span>
+                        <span class="dish__name--sub">Au piment d'Espelette et à la truffe noire</span>
+                    </h3>
+                    <p class="dish__price">23€</p>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <footer class="footer">
+        <h1 class="logo logo--footer">ohmyfood</h1>
+        <ul class="footer__list">
+            <li class="footer__item">
+                <a href="#" class="footer__link footer__link--bold">
+                    <svg class="footer__icon icon icon--white">
+                        <use xlink:href="../images/icons/sprite.svg#icon-utensils"></use>
+                    </svg>
+                    Proposer un restaurant
+                </a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link footer__link--bold">
+                    <svg class="footer__icon icon icon--white">
+                        <use xlink:href="../images/icons/sprite.svg#icon-hands-helping"></use>
+                    </svg>
+                    Devenir partenaire
+                </a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">
+                    Mentions légales
+                </a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">
+                    Contact
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
 
 </html>

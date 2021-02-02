@@ -70,7 +70,6 @@
     }   
 }
 
-
 .card{
     display: grid;
     grid-template-rows: repeat(6, 4rem);
@@ -104,5 +103,21 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+}
+
+.menu{
+    @include media-queries(map-get($breakpoints, bp-850)){
+        grid-template-columns: repeat(3, 3fr);
+    }
+    &__list{
+        &--dessert{
+            @include media-queries(map-get($breakpoints, bp-600)){
+                grid-column: 1 / -1;
+            }
+            @include media-queries(map-get($breakpoints, bp-850)){
+                grid-column: auto;
+            }
+        }
     }
 }

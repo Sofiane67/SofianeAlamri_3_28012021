@@ -1,0 +1,31 @@
+.dish{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1rem 1.5rem;
+
+    &__name{
+        display: flex;
+        flex-direction: column;
+        line-height: 2.5rem;
+        min-width: 0;
+
+        &--main{
+            font-size: 1.7rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        &--sub{
+            font-size: 1.5rem;
+            font-weight: 400;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    &__price{
+        font-weight: 700;
+    }
+}
