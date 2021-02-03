@@ -11,6 +11,8 @@
     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
     grid-gap: 3rem;
     justify-items: center;
+    align-items: flex-start;
+
     &__restaurant-name{
         grid-column: 1 / -1;
         position: relative;
@@ -27,17 +29,15 @@
         grid-gap: 3rem;
 
         &--starters{
-            animation: displayDishes 2s cubic-bezier(0.5, 1, 0.89, 1);
+            @include displayDishes();
         }
 
         &--dishes{
-            animation: displayDishes 2s cubic-bezier(0.5, 1, 0.89, 1) .3s;
-            animation-fill-mode: backwards;
+            @include displayDishes(.3s);
         }
 
         &--dessert{
-            animation: displayDishes 2s cubic-bezier(0.5, 1, 0.89, 1) .6s;
-            animation-fill-mode: backwards;
+            @include displayDishes(.6s);
         }
     }
 
