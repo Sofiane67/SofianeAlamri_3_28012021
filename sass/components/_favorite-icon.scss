@@ -1,35 +1,83 @@
- .favorite-icon{
+ .favorite{
+    position: relative;
+    width: 2rem;
+    overflow: hidden;
+    display: flex;
+    background: $color-gray-light;
+    mix-blend-mode: darken;
+    
+    
+    &--menu{
+        width: 3rem;
+        padding: 3px;
+    }
+    
+    &::after{
+        content: "";
+        display: block;
         position: absolute;
-        transition: all .4s;
-        font-size: 2.2rem;
+        top: 0; bottom: 0; right: 0; left: 0;
+    }
 
-        &--home{
-            top: 8px;
-            right: 2rem;
+    &:hover::after{
+        background: linear-gradient(to right top, $color-secondary,$color-primary);
+        mix-blend-mode: screen;
+    }
+
+    &:hover &__icon--show{
+        display: none;
+    }
+
+    &__icon{
+        &::before{
+            font-size: 2rem;
         }
 
-        &--menu{
-            transform: translate(-100%, -50%);
-        }
-
-        &--hidden{
-            background: linear-gradient(to right top, $color-secondary,$color-primary);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            z-index: 1;
-            opacity: 0;
+        &--menu::before{
+            font-size: 2.5rem;
         }
 
         &--show{
-            z-index: 2;
+            margin-right: 3px;
         }
 
-        &--show:hover{
-            opacity: 0;
-        }
+    }
 
-        &--show:hover ~ &--hidden{
-            opacity: 1;
-        }
+
+
+    
+
+    // position: absolute;
+    // transition: all .4s;
+    // font-size: 2.2rem;
+
+    // &--home{
+    //     top: 8px;
+    //     right: 2rem;
+    // }
+
+    // &--menu{
+    //     transform: translate(-100%, -50%);
+    // }
+
+    // &--hidden{
+    //     background: linear-gradient(to right top, $color-secondary,$color-primary);
+    //     background-clip: text;
+    //     -webkit-background-clip: text;
+    //     -webkit-text-fill-color: transparent;
+    //     z-index: 1;
+    //     opacity: 0;
+    // }
+
+    // &--show{
+    //     z-index: 2;
+    // }
+
+    // &--show:hover{
+    //     opacity: 0;
+    // }
+
+    // &--show:hover ~ &--hidden{
+    //     opacity: 1;
+    // }
     }

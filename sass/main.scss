@@ -6,11 +6,12 @@
 @import "base/base";
 @import "base/typography"; 
 
+@import "components/loader";
 @import "components/company";
 @import "components/button";
+@import "components/favorite-icon";
 @import "components/step";
 @import "components/card";
-@import "components/favorite-icon";
 @import "components/hero";
 @import "components/menu";
 @import "components/dish";
