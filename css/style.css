@@ -333,23 +333,23 @@ body {
   justify-content: space-between;
   justify-self: stretch;
 }
+.menu__starters {
+  animation: displayDishes 1.5s cubic-bezier(0.5, 1, 0.89, 1) 0s;
+  animation-fill-mode: backwards;
+}
+.menu__dishes {
+  animation: displayDishes 1.5s cubic-bezier(0.5, 1, 0.89, 1) 0.3s;
+  animation-fill-mode: backwards;
+}
+.menu__dessert {
+  animation: displayDishes 1.5s cubic-bezier(0.5, 1, 0.89, 1) 0.6s;
+  animation-fill-mode: backwards;
+}
 .menu__list {
   width: 100%;
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   grid-gap: 3rem;
-}
-.menu__list--starters {
-  animation: displayDishes 1.5s cubic-bezier(0.5, 1, 0.89, 1) 0s;
-  animation-fill-mode: backwards;
-}
-.menu__list--dishes {
-  animation: displayDishes 1.5s cubic-bezier(0.5, 1, 0.89, 1) 0.3s;
-  animation-fill-mode: backwards;
-}
-.menu__list--dessert {
-  animation: displayDishes 1.5s cubic-bezier(0.5, 1, 0.89, 1) 0.6s;
-  animation-fill-mode: backwards;
 }
 .menu__item {
   width: 100%;
@@ -561,13 +561,16 @@ body {
     margin: 0 auto;
   }
 }
+.menu__starters, .menu__dishes, .menu__dessert {
+  justify-self: stretch;
+}
 @media only screen and (min-width: 37.5em) {
-  .menu__list--dessert {
+  .menu__dessert {
     grid-column: 1/-1;
   }
 }
 @media only screen and (min-width: 53.125em) {
-  .menu__list--dessert {
+  .menu__dessert {
     grid-column: auto;
   }
 }

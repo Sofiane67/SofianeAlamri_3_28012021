@@ -22,23 +22,23 @@
         justify-self: stretch;
     }
 
+        &__starters{
+            @include displayDishes();
+        }
+
+        &__dishes{
+            @include displayDishes(.3s);
+        }
+
+        &__dessert{
+            @include displayDishes(.6s);
+        }
+
     &__list{
         width: 100%;
         display: grid;
         grid-template-columns: minmax(0,1fr);
         grid-gap: 3rem;
-
-        &--starters{
-            @include displayDishes();
-        }
-
-        &--dishes{
-            @include displayDishes(.3s);
-        }
-
-        &--dessert{
-            @include displayDishes(.6s);
-        }
     }
 
      &__item{
