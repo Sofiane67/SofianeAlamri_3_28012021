@@ -31,8 +31,12 @@
         <h2 class="menu__restaurant-name">
             <span>La palette du goût</span>
             <span class="favorite favorite--menu">
-                <i class="far fa-heart favorite__icon favorite__icon--menu favorite__icon--home favorite__icon--show"></i>
-                <i class="fas fa-heart favorite__icon favorite__icon--menu favorite__icon--home favorite__icon--hidden"></i>
+                <svg class="favorite__icon favorite__icon--menu favorite__icon--show">
+                    <use xlink:href="../images/icons/sprite.svg#icon-heart"></use>
+                </svg>
+                <svg class="favorite__icon favorite__icon--menu favorite__icon--hidden">
+                    <use xlink:href="../images/icons/sprite.svg#icon-heart-solid"></use>
+                </svg>
             </span>
         </h2>
         <div class="menu__starters">
@@ -203,7 +207,7 @@
                 </a>
             </li>
             <li class="footer__item">
-                <a href="#" class="footer__link">
+                <a href="mailto:contact@ohmyfood.com" class="footer__link">
                     Contact
                 </a>
             </li>

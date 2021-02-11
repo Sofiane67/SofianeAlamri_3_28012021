@@ -202,15 +202,14 @@ body {
 
 .favorite {
   position: relative;
-  width: 2rem;
-  overflow: hidden;
-  display: flex;
+  width: 2.5rem;
+  height: 2.5rem;
   background: #f5f5f5;
   mix-blend-mode: darken;
 }
 .favorite--menu {
   width: 3rem;
-  padding: 3px;
+  height: 3rem;
 }
 .favorite::after {
   content: "";
@@ -220,22 +219,38 @@ body {
   bottom: 0;
   right: 0;
   left: 0;
+  background-image: linear-gradient(to right top, #FF79DA, #9256dc);
+  mix-blend-mode: screen;
+  opacity: 0;
+  transition: all 1s;
 }
 .favorite:hover::after {
-  background: linear-gradient(to right top, #FF79DA, #9256dc);
-  mix-blend-mode: screen;
+  opacity: 1;
 }
-.favorite:hover .favorite__icon--show {
-  display: none;
+.favorite__icon {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 .favorite__icon::before {
   font-size: 2rem;
 }
-.favorite__icon--menu::before {
-  font-size: 2.5rem;
+.favorite__icon--menu {
+  width: 3rem;
+  height: 3rem;
 }
 .favorite__icon--show {
-  margin-right: 3px;
+  transition: opacity 1s;
+}
+.favorite__icon--show:hover {
+  opacity: 0;
+}
+.favorite__icon--hidden {
+  opacity: 0;
+  transition: opacity 1s;
+}
+.favorite:hover .favorite__icon--show ~ .favorite__icon--hidden {
+  opacity: 1;
 }
 
 .step {

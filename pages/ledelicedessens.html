@@ -31,8 +31,12 @@
         <h2 class="menu__restaurant-name">
             <span>Le délice des sens</span>
             <span class="favorite favorite--menu">
-                <i class="far fa-heart favorite__icon favorite__icon--menu favorite__icon--home favorite__icon--show"></i>
-                <i class="fas fa-heart favorite__icon favorite__icon--menu favorite__icon--home favorite__icon--hidden"></i>
+                <svg class="favorite__icon favorite__icon--menu favorite__icon--show">
+                    <use xlink:href="../images/icons/sprite.svg#icon-heart"></use>
+                </svg>
+                <svg class="favorite__icon favorite__icon--menu favorite__icon--hidden">
+                    <use xlink:href="../images/icons/sprite.svg#icon-heart-solid"></use>
+                </svg>
             </span>
         </h2>
         <div class="menu__starters">
@@ -176,7 +180,7 @@
                 </li>
             </ul>
         </div>
-        <a href="#" class="btn menu__btn">Commander</a>
+        <a href="mailto:contact@ohmyfood.com" class="btn menu__btn">Commander</a>
     </section>
     <footer class="footer">
         <h1 class="logo logo--footer">ohmyfood</h1>
