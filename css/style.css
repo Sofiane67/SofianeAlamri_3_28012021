@@ -164,25 +164,25 @@ body {
   animation-name: ball-3;
 }
 
-.company {
+.intro {
   color: #363636;
 }
-.company__location {
+.intro__location {
   background-color: #ebebeb;
   font-weight: 700;
   display: flex;
   justify-content: center;
   padding: 1.5rem 0;
 }
-.company__city {
+.intro__city {
   margin-left: 1rem;
 }
-.company__text-box {
+.intro__text-box {
   background-color: #f5f5f5;
   padding: 4rem;
   text-align: center;
 }
-.company__text {
+.intro__text {
   padding: 2rem 0;
   text-align: center;
 }

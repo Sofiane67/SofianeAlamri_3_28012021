@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!--LOADER SPINNER-->
     <div class="loader">
         <div class="loader__spinner">
             <div class="loader__ball loader__ball--1"></div>
@@ -22,19 +23,23 @@
     <header class="header">
         <h1 class="logo logo--header">ohmyfood</h1>
     </header>
-    <section class="company">
-        <div class="company__location">
+    <!--Introduction de la page : Localisation des restaurants - presentation de l'entreprise -->
+    <section class="intro">
+        <!--Localisation-->
+        <div class="intro__location">
             <svg class="icon icon--gray-dark">
                 <use xlink:href="images/icons/sprite.svg#icon-map-marker"></use>
             </svg>
-            <p class="company__city">Paris, Belleville</p>
+            <p class="intro__city">Paris, Belleville</p>
         </div>
-        <div class="company__text-box">
+        <!--Presentation de l'entreprise-->
+        <div class="intro__text-box">
             <h2 class="heading-secondary">Réservez le menu qui vous convient</h2>
-            <p class="company__text">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+            <p class="intro__text">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
             <a href="#restaurant" class="btn">Explorer nos restaurants</a>
         </div>
     </section>
+    <!--Fonctionnement-->
     <section class="operation">
         <h2 class="heading-secondary">Fonctionnement</h2>
         <div class="step">
@@ -59,8 +64,10 @@
             <p class="step__text">Dégustez au restaurant</p>
         </div>
     </section>
+    <!--Liste des restaurants-->
     <section id="restaurant" class="restaurant">
         <h2 class="heading-secondary">Restaurants</h2>
+        <!-- CARD - La palette du goût -->
         <a href="pages/lapalettedugout.html" class="card-link">
             <figure class="card">
                 <div class="card__img-box">
@@ -83,6 +90,7 @@
                 </figcaption>
             </figure>
         </a>
+        <!-- CARD - La note enchantée -->
         <a href="pages/lanoteenchantee.html" class="card-link">
             <figure class="card">
                 <div class="card__img-box">
@@ -105,6 +113,7 @@
                 </figcaption>
             </figure>
         </a>
+        <!-- CARD - A la française -->
         <a href="pages/alafrancaise.html" class="card-link">
             <figure class="card">
                 <div class="card__img-box">
@@ -127,6 +136,7 @@
                 </figcaption>
             </figure>
         </a>
+        <!-- CARD - Le délice des sens -->
         <a href="pages/ledelicedessens.html" class="card-link">
             <figure class="card">
                 <div class="card__img-box">
@@ -150,6 +160,7 @@
             </figure>
         </a>
     </section>
+    <!--Footer-->
     <footer class="footer">
         <h1 class="logo logo--footer">ohmyfood</h1>
         <ul class="footer__list">
