@@ -9,10 +9,20 @@ html{
     @include media-queries(map-get($breakpoints, bp-850)){
         font-size: 70%;
     }
+
+    @include media-queries(map-get($breakpoints, bp-2000)){
+        font-size: 100%;
+    }
+}
+
+body{
+    height: 100vh;
+    display: grid;
 }
 
 .inner-body{
     background-color: $color-gray-light;
+    display: initial;
 }
 
 *{

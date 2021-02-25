@@ -4,10 +4,10 @@
   "description": "Projet 3 Openclassroom Ohmyfood",
   "main": "index.html",
   "scripts": {
-    "sass": "sass --watch sass/main.scss css/style.css",
+    "sass": "sass --watch assets/sass/main.scss assets/css/style.css",
     "devserver": "live-server",
     "start": "npm-run-all --parallel devserver sass",
-    "prefix:css": "postcss --use autoprefixer -b 'last 5 versions' css/style.css"
+    "prefix:css": "postcss --use autoprefixer -b 'last 5 versions' assets/css/style.css"
   },
   "author": "Sofiane Al amri",
   "license": "ISC",
